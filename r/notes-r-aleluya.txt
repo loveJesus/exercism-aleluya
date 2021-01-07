@@ -4,3 +4,4 @@
 # NOTES_ALELUYA
     - paste0 paste sep=""
     - Comments = #
+    - standard C eq. operators, &/| one element or && || multi, %% modulus %/% div

@@ -1,6 +1,16 @@
 # For God so loved the world, that He gave His only begotten Son, that all who believe in Him should not perish but have everlasting life
+
+# MENTORS_ALELUYA
+- verdammelt 
+    - on loop, eq, etc
+        - http://www.gigamonkeys.com/book/loop-for-black-belts.html
+        - http://www.lispworks.com/documentation/HyperSpec/Body/06_ac.htm
+
+
+# NOTES_ALELUYA
 - No while loops
 - Cannot iterate over strings, they are sequences, use get
 - can do (or a b) to use b if a is nil
 - can do loop, when, setq setf if etc.
 - mapcar zips lists also
+- loop is capable, http://www.gigamonkeys.com/book/loop-for-black-belts.html

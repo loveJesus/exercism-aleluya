@@ -7,13 +7,11 @@
 (in-package #:hamming)
 
 (defun distance (dna1_aleluya dna2_aleluya)    
-    "Number of positional differences in two equal length dna strands."
-    (if (not(eq (length dna1_aleluya) (length dna2_aleluya) )) 
-        (return-from distance nil )
-        (let (  (count_aleluya (- (length dna1_aleluya) 1)) 
-                (sum_aleluya 0) )
-            (loop
-                (when (< count_aleluya 0) (return sum_aleluya))
-                (when (not(eq (char dna1_aleluya count_aleluya) (char dna2_aleluya count_aleluya)))
-                      (setq sum_aleluya (+ sum_aleluya 1)))
-                (setq count_aleluya (- count_aleluya 1)) ))))
+  "Number of positional differences in two equal length dna strands."
+  (if (/= (length dna1_aleluya) (length dna2_aleluya) )
+    nil
+    (loop
+      for char1_aleluya across dna1_aleluya
+      for char2_aleluya across dna2_aleluya
+      counting (char/= char1_aleluya char2_aleluya) into total_aleluya
+      finally (return total_aleluya))))

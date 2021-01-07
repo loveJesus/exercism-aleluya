@@ -6,7 +6,6 @@ c# - space age
 clojure - bob
 ruby - resistor color duo
 delphi - leap
-r - leap
 
 reasonml
 
