@@ -7,8 +7,8 @@ use Exporter 'import';
 use experimental qw(signatures);
 our @EXPORT_OK = qw(two_fer);
 
-sub two_fer ($name_aleluya = undef) { 
-    if (!$name_aleluya) { $name_aleluya = "you" }
-    return "One for $name_aleluya, one for me."}
+sub two_fer ($name_aleluya = "you") { 
+    return "One for $name_aleluya, one for me."
+}
 1;
 
