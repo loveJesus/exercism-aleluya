@@ -1,0 +1,6 @@
+# For God so loved the world, that He gave His only begotten Son, that all who believe in Him should not perish but have everlasting life
+
+# MENTOR_ALELUYA: glennj - thanks Jesus, help please with working with aleluya
+
+- kinda like shell scripting -aleluya
+- lindex instead of [], expr {} for math

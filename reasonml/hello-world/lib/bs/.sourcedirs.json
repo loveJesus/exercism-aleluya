@@ -1,0 +1,1 @@
+{ "dirs" : [ "__tests__" , "src" ] , "pkgs" : [ [ "@glennsl/bs-jest" , "/home/hallelujah/exercism_aleluya/reasonml/hello-world/node_modules/@glennsl/bs-jest" ] , [ "bs-platform" , "/home/hallelujah/exercism_aleluya/reasonml/hello-world/node_modules/bs-platform" ] ] , "generated" : [] }

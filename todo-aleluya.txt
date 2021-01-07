@@ -1,0 +1,52 @@
+elm - Bob ALELUYA
+tcltk - Error Handling ALELUYA
+prolog - triangle
+groovy - hamming
+c# - space age
+clojure - bob
+ruby - resistor color duo
+delphi - leap
+r - leap
+
+reasonml
+
+
+NOmentor
+- PHP
+
+----------------
+Psalm 133, 6/4, 107 BPM
+
+- The song has 5 verses of 6 bars each, 
+with an A part and B part of 3 bars each
+
+- A parts have ~5 syllables, B parts have ~7
+
+- The Chord switches at the last syllable,
+which sort of glides upwards
+and is held for a long time.
+
+- Chord progression is 
+ A part: D->Amin, 
+ B part: Bb->G (and almost glides into Amaj)
+ You can see the / where the switch happens
+ This switch happens two bars into each part
+
+- Structure reminiscent of Björk, glory to God
+and we pray for her to be a sister in Christ Jesus
+
+------
+A: How good how plea/sant
+B: bro-thers dwe-lling in un/ity
+
+A: like oil fragra/nt
+B: up-on the head down the b/eard
+
+A: the beard of Ar/on
+B: to the edges of his r/obes
+
+A: like dew of herm/on
+B: down the moun-tains of zi/on
+
+A: for there the Lo/rd
+B: co-man-ded life for ev/er

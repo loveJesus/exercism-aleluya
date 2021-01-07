@@ -1,0 +1,32 @@
+# For God so loved the world, that He gave His only begotten Son, 
+# that all who believe in Him should not perish, but have everlasting life
+.data
+
+.text
+
+# $a0 has address of binary string to convert, aleluya
+# Ret $v0 integer value Aleluya
+binary_convert:
+	li $v0, 0 # Counter Aleluya
+
+
+scanit_aleluya:
+	lb $t0, 0($a0) # byte of next char
+	beq $t0, 0, done_aleluya
+	sll $v0, $v0, 1
+	beq $t0, 48, is_zero_aleluya # ASCII 0
+	
+	#next input is one so set lsbit
+	addiu $v0, $v0, 1
+
+is_zero_aleluya:	
+	addiu $a0, $a0, 1
+	
+	j scanit_aleluya
+
+done_aleluya:
+	jr $ra
+
+	
+.globl binary_convert
+	

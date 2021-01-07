@@ -1,0 +1,436 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"args_aleluya"
+			],
+			[
+				"gig",
+				"gigasec_aleluya"
+			],
+			[
+				"msn",
+				"msg_n2_aleluya"
+			],
+			[
+				"c",
+				"count_digits_aleluya"
+			],
+			[
+				"for",
+				"for_each"
+			],
+			[
+				"co",
+				"completed_field_aleluya"
+			],
+			[
+				"ret",
+				"ret_aleluya"
+			],
+			[
+				"list",
+				"list1_aleluya"
+			],
+			[
+				"new",
+				"new_idx_aleluya"
+			],
+			[
+				"fir",
+				"first_idx_aleluya"
+			],
+			[
+				"li1_",
+				"li1_idx_aleluya"
+			],
+			[
+				"sta",
+				"status_aleluya"
+			],
+			[
+				"se",
+				"seconds_aleluya"
+			],
+			[
+				"Fou",
+				"FoundNoneAleluya"
+			],
+			[
+				"Fo",
+				"FoundStopAleluya"
+			],
+			[
+				"Codo",
+				"CodonIterAleluya"
+			],
+			[
+				"Cod",
+				"CodonIterAleluya"
+			],
+			[
+				"len",
+				"len_aleluya"
+			],
+			[
+				"pa",
+				"pairs_aleluya"
+			],
+			[
+				"l_",
+				"l_word_aleluya"
+			],
+			[
+				"val",
+				"val_aleluya"
+			],
+			[
+				"bo",
+				"borrow_mut"
+			],
+			[
+				"re",
+				"res_palindrome_aleluya"
+			],
+			[
+				"R",
+				"RcpAleluya"
+			],
+			[
+				"min_a",
+				"min_acc_aleluya"
+			],
+			[
+				"prod",
+				"prod_aleluya"
+			],
+			[
+				"pro",
+				"prod_aleluya"
+			],
+			[
+				"fa",
+				"factors_aleluya"
+			],
+			[
+				"wor",
+				"word_aleluya"
+			],
+			[
+				"char",
+				"char_aleluya"
+			],
+			[
+				"test",
+				"test_word_aleluya"
+			],
+			[
+				"tes",
+				"test_word_aleluya"
+			],
+			[
+				"hou",
+				"hourminutes_aleluya"
+			],
+			[
+				"mi",
+				"minutes_aleluya"
+			],
+			[
+				"i_a",
+				"i_accum_aleluya"
+			],
+			[
+				"str",
+				"str_aleluya"
+			],
+			[
+				"k",
+				"k_aleluya"
+			],
+			[
+				"o",
+				"outputs_aleluya"
+			],
+			[
+				"file",
+				"filename_aleluya"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: a",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 185.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/fsharp/two-fer/TwoFer.fs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/fsharp/hello-world/HelloWorld.fs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/fsharp/two-fer/TwoFerTests.fs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/erlang/two-fer/src/two_fer.erl",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/dart/hello-world/lib/hello_world.dart",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/dart/two-fer/lib/two_fer.dart",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/elm/hello-world/src/HelloWorld.elm",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/erlang/hello-world/src/hello_world.erl",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/dart/two-fer/test/two_fer_test.dart",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/crystal/hamming/spec/hamming_spec.cr",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/crystal/hamming/src/hamming.cr",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/coffeescript/hello-world/hello-world.coffee",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/coffeescript/bob/bob.coffee",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/common-lisp/hello-world/hello-world.lisp",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/common-lisp/two-fer/two-fer.lisp",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/crystal/hello-world/spec/hello_world_spec.cr",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/crystal/hello-world/src/hello_world.cr",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/coffeescript/bob/bob.spec.coffee",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/lua/hamming/hamming.lua",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/cfml/leap/Leap.cfc",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/d/hello-world/source/hello_world.d",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/d/leap/source/leap.d",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/csharp/gigasecond/Gigasecond.cs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/csharp/leap/Leap.cs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/clojurescript/hello-world/src/hello_world.cljs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/clojurescript/two-fer/src/two_fer.cljs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/csharp/gigasecond/GigasecondTests.cs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/cpp/leap/leap.cpp",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/x86-64-assembly/two-fer/two_fer.asm",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/lua/hello-world/hello-world.lua",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/cpp/leap/leap_test.cpp",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/cpp/leap/leap.h",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/clojure/hello-world/src/hello_world.clj",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/clojure/two-fer/src/two_fer.clj",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/cfml/hello-world/HelloWorld.cfc",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/x86-64-assembly/hello-world/hello_world.asm",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/x86-64-assembly/two-fer/two_fer_test.c",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/bash/hello-world/hello_world.sh",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/bash/two-fer/two_fer.sh",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/cpp/hello-world/hello_world.cpp",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/elixir/rna-transcription/lib/rna_transcription.ex",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/csharp/hello-world/HelloWorld.cs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/csharp/two-fer/TwoFer.cs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/csharp/two-fer/TwoFerTests.cs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/csharp/leap/LeapTests.cs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/c/armstrong-numbers/src/armstrong_numbers.h",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/go/hello-world/hello_world.go",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/go/two-fer/two_fer.go",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/c/armstrong-numbers/test/test_armstrong_numbers.c",
+		"/C/Users/aleluya/AppData/Roaming/Sublime Text 3/Packages/User/john316a-aleluya.sublime-snippet",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/c/armstrong-numbers/src/armstrong_numbers.c",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/elixir/rna-transcription/test/test_helper.exs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/c/hello-world/src/hello_world.c",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/elixir/hello-world/lib/hello_world.ex",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/minesweeper/src/lib.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/sublist/src/lib.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/nth-prime/Cargo.toml",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/nth-prime/tests/nth-prime.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/nth-prime/src/lib.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/space-age/tests/space-age.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/space-age/src/lib.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/anagram/src/lib.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/protein-translation/src/lib.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/palindrome-products/tests/palindrome-products.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/palindrome-products/src/main.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/palindrome-products/src/lib.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/anagram/Cargo.toml",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/acronym/Cargo.toml",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/acronym/src/lib.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/clock/src/lib.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/clock/tests/clock.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/gigasecond/src/lib.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/reverse-string/Cargo.toml",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/reverse-string/src/lib.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/sum-of-multiples/tests/sum-of-multiples.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/sum-of-multiples/src/lib.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/raindrops/src/lib.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/proverb/tests/proverb.rs",
+		"//wsl/Ubuntu-20.04/home/hallelujah/exercism_aleluya/rust/proverb/src/lib.rs",
+		"/D/OneDrive/revision-aleluya/___other-256byte-aleluya/release-aleluya/source-aleluya/jclord.asm",
+		"/C/Users/aleluya/AppData/Roaming/Ableton/Live 10.1.25/Preferences/Log.txt",
+		"/C/Users/aleluya/AppData/Roaming/Ableton/Live 10.1.25/Preferences/CrashDetection.cfg",
+		"/C/Users/aleluya/AppData/Roaming/Ableton/Live 10.1.25/Preferences/Crash/2020_11_29__20_36_31_CrashRecoveryInfo.cfg",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/aleluya/Desktop/backupleluya-2020-08-11.sql",
+		"/C/Users/aleluya/Downloads/lJ_detroit_reader.sh",
+		"/D/OneDrive/docs-2-aleluya/bcs-aleluya/bcs-19298281-aleluya.xml",
+		"/C/Users/aleluya/Downloads/detroit_index.txt",
+		"/C/Users/aleluya/Desktop/lJ_detroit_reader.sh",
+		"/C/cygwin64-aleluya/home/hallelujah/.ssh/id_ed25519",
+		"/C/Users/aleluya/AppData/Local/Microsoft/CLR_v4.0_32/UsageLogs/Splice.Helper.exe.log",
+		"/C/Users/aleluya/Desktop/sendmidi-windows-1.0.14/crossleluya.sh",
+		"/C/Users/hallelujah/.wslconfig",
+		"/C/Users/aleluya/Documents/Splice/.splice/id",
+		"/C/Users/hallelujah/Downloads/xertetoolkits_3.9/readme.md",
+		"/C/Users/hallelujah/Downloads/conexionIntegracion.php",
+		"/C/Users/hallelujah/Desktop/installeluya.sh",
+		"/C/Users/hallelujah/Desktop/fotos-michatoya-parte-a-aleluya.txt",
+		"/C/Users/hallelujah/Desktop/glowleluya.py",
+		"/C/Users/hallelujah/Desktop/tmp1-aleluya.txt",
+		"/C/Users/hallelujah/michatoya_dj_aleluya-postgres_db_aleluya-2020_07_27_17_23_23-dump-aleluya.sql",
+		"/C/cygwin64-aleluya/home/hallelujah/.sshleluya/id_ed25519",
+		"/C/Users/hallelujah/postgres_db_aleluya-2020_06_16_09_27_54-dump.sql",
+		"/C/Users/hallelujah/Desktop/index.html",
+		"//wsl$/Ubuntu-20.04/home/hallelujah/dev-aleluya/friends-aleluya/michatoya-dj-aleluya/pacifico_aleluya/static/pacifico_aleluya/img-aleluya/icon-blue-web-aleluya.svg",
+		"/C/Users/hallelujah/Documents/AdobePresentationsAleluya/Cristo Vive/data/html/Project.js",
+		"/C/Users/hallelujah/aleluya1-postgres_db_aleluya-2020_07_10_18_09_30-dump.sql",
+		"/C/Users/hallelujah/Desktop/mark-aleluya.txt"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "HelloWorld.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 266.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,13 @@
+# For God so loved the world, that He gave His only begotten Son, that all who believe in Him should not perish but have everlasting life
+
+# FAMILY_ALELUYA: ruby + ocaml
+
+# NOTES_ALELUYA: 
+ - \W regexp and german words
+ - ternary if true, do: 1, else: 0
+ - Sort of rubyish, no let for variables
+ - can do value_aleluya = maybenillvar_aleluya || defaultvalue_aleluya
+ - Map.get default value, Map.update for defaults, multiple function signatures
+ - uses case as the switch statement
+ - put end at the end of lambdas with only fn aleluya -> at start
+ - Can have functions with same arity, match different params (see word-count hallelujah)
