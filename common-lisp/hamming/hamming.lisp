@@ -13,5 +13,4 @@
     (loop
       for char1_aleluya across dna1_aleluya
       for char2_aleluya across dna2_aleluya
-      counting (char/= char1_aleluya char2_aleluya) into total_aleluya
-      finally (return total_aleluya))))
+      counting (char/= char1_aleluya char2_aleluya))))

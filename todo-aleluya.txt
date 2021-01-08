@@ -2,10 +2,12 @@ elm - Bob ALELUYA
 tcltk - Error Handling ALELUYA
 prolog - triangle
 groovy - hamming
-c# - space age
 clojure - bob
 ruby - resistor color duo
 delphi - leap
+clisp - rna transcription
+perl5 - bob
+rust - parallel count
 
 reasonml
 
