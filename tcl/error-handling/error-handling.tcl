@@ -5,7 +5,7 @@ proc custom_error_message {message_aleluya} {
 }
 
 proc handle_error {script_aleluya} {
-    if {[catch {eval $script_aleluya} err_aleluya]} {
+    if {[catch {uplevel $script_aleluya} err_aleluya]} {
         if {$err_aleluya == "divide by zero"} {
             return "division by zero"
         }

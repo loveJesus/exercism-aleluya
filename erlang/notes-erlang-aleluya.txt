@@ -5,3 +5,7 @@
     - @elbrujohalcon Lord have mercy. Decent comments though
     - @meerkatdev helpful
 
+# NOTES_ALELUYA:
+    - list comprehension [Fn_aleluya(H_aleluya) || H_aleluya <- Ls_aleluya].
+    - Match [ Hd_aleluya | Tl_aleluya ]
+

@@ -5,12 +5,9 @@
 package twofer
 
 // ShareWith shares one for someone and one for me.
-func ShareWith(name_aleluya string) string {
-	var write_aleluya string
-	if len(name_aleluya) > 0 {
-		write_aleluya = name_aleluya
-	} else {
-		write_aleluya = "you"
+func ShareWith(nameAleluya string) string {
+	if len(nameAleluya) == 0 {
+		nameAleluya = "you"
 	}
-	return "One for " + write_aleluya + ", one for me."
+	return "One for " + nameAleluya + ", one for me."
 }

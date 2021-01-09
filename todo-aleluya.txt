@@ -1,13 +1,16 @@
-prolog - triangle
 groovy - hamming
-delphi - leap
-go - fix
 elixir - roman numerals
-reasonml
-
 
 NOmentor
 - PHP
+- Emacs lisp
+- Kotlin
+- reasonml
+- Scala
+- Scheme
+- Typescript
+- Vim script
+
 
 ----------------
 Psalm 133, 6/4, 107 BPM
