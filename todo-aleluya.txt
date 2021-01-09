@@ -5,10 +5,9 @@ groovy - hamming
 clojure - bob
 ruby - resistor color duo
 delphi - leap
-clisp - rna transcription
 perl5 - bob
-rust - parallel count
-
+go - fix
+elixir - roman numerals
 reasonml
 
 
