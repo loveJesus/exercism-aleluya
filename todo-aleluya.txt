@@ -1,11 +1,6 @@
-elm - Bob ALELUYA
-tcltk - Error Handling ALELUYA
 prolog - triangle
 groovy - hamming
-clojure - bob
-ruby - resistor color duo
 delphi - leap
-perl5 - bob
 go - fix
 elixir - roman numerals
 reasonml
