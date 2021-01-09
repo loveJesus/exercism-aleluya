@@ -1,6 +1,3 @@
-groovy - hamming
-elixir - roman numerals
-
 NOmentor
 - PHP
 - Emacs lisp

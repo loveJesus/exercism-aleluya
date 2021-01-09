@@ -1,8 +1,50 @@
+# For God so loved the world, that He gave His only begotten Son, 
+# that all who believe in Him should not perish but have everlasting life.
+
 defmodule RomanNumerals do
   @doc """
   Convert the number to a roman number.
   """
   @spec numeral(pos_integer) :: String.t()
-  def numeral(number) do
+
+
+  # Hallelujah - List of Tuples with (Numeral String, Numeral value int)
+  def numerals_aleluya do
+    [ {"M", 1000}, {"CM", 900}, 
+      {"D", 500}, {"CD", 400},
+      {"C", 100}, {"XC", 90},
+      {"L", 50}, {"XL", 40},
+      {"X", 10}, {"IX", 9},
+      {"V", 5}, {"IV", 4},
+      {"I", 1}]
+  end
+
+  def numeraldec_aleluya(0) do
+    nil
+  end
+
+  # Hallelujah Return tuple with (Decreased value int, Numeral used to decrease string)
+  def numeraldec_aleluya(number_aleluya) do
+    {fstr_aleluya, fval_aleluya} = 
+      Enum.find( 
+        numerals_aleluya, 
+        fn( {char_aleluya, val_aleluya} ) ->          
+          val_aleluya <= number_aleluya
+        end)          
+
+    {number_aleluya - fval_aleluya, fstr_aleluya}
+
+  end
+
+  def numeral_make_aleluya(numleft_aleluya, curstr_aleluya) do
+    case numeraldec_aleluya(numleft_aleluya) do
+      {nextnum_aleluya, nextchar_aleluya} -> numeral_make_aleluya(nextnum_aleluya, curstr_aleluya <> nextchar_aleluya)
+      nil -> curstr_aleluya
+    end
+  end
+
+  # Hallelujah Return string of Roman numeral value of number_aleluya
+  def numeral(number_aleluya) do
+    numeral_make_aleluya(number_aleluya, "")
   end
 end
