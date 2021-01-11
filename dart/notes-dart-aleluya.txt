@@ -7,3 +7,4 @@
 # NOTES_ALELUYA
  - use expression-bodied method
  - parameter in str return 'One for $name_aleluya, one for me.';
+ - jsonish object notation, has fold with lambda
