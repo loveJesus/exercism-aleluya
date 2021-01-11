@@ -14,3 +14,4 @@
 - can do loop, when, setq setf if etc.
 - mapcar zips lists also
 - loop is capable, http://www.gigamonkeys.com/book/loop-for-black-belts.html
+- no return (like with a body with a when that is not entered) returns nil

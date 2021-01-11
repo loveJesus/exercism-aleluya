@@ -4,3 +4,5 @@
 
 - kinda like shell scripting -aleluya
 - lindex instead of [], expr {} for math
+- make sure to use uplevel instead of exec (error-handling)
+- use split on words correctly is best (@glennj on acronym)

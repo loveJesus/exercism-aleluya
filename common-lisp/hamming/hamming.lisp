@@ -8,8 +8,7 @@
 
 (defun distance (dna1_aleluya dna2_aleluya)    
   "Number of positional differences in two equal length dna strands."
-  (if (/= (length dna1_aleluya) (length dna2_aleluya) )
-    nil
+  (unless (/= (length dna1_aleluya) (length dna2_aleluya) )
     (loop
       for char1_aleluya across dna1_aleluya
       for char2_aleluya across dna2_aleluya
