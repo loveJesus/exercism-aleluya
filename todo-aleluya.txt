@@ -4,11 +4,12 @@ that all who believe in Him should not perish but have everlasting life.
 tcl high-scores
 swift - leap
 clojure - w bob
-erlang - w accum
-delphi - w gigasecond
 go - hamming - HALLELUJAH
 pharo - isogram - aleluya
-groovy - w hamming - aleluya
+groovy - gigasecond
+delphi - resistor-color
+java - w gigasecond
+erlang - collatz Hallelujah
 
 NOmentor
 - PHP

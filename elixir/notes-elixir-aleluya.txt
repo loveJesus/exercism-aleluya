@@ -2,6 +2,13 @@
 
 # FAMILY_ALELUYA: ruby + ocaml
 
+# MENTORS_ALELUYA:
+    - chriseyre2000 
+        - Roman numerals Hallelujah
+            - prefix with underscore if unused
+            - use defp on private functions
+            - can have one arity defp
+            
 # NOTES_ALELUYA: 
  - \W regexp and german words
  - ternary if true, do: 1, else: 0

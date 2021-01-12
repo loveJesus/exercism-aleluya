@@ -3,7 +3,9 @@
 
 # MENTORS_ALELUYA :
  - @Artamanov 
-    - zip, foreach etc with check https://docs.groovy-lang.org/latest/html/api/org/codehaus/groovy/runtime/DefaultGroovyMethods.html
+    - hamming Aleluya
+        - zip, foreach etc with check https://docs.groovy-lang.org/latest/html/api/org/codehaus/groovy/runtime/DefaultGroovyMethods.html
+        - Use spread operator http://groovy-lang.org/operators.html#_spread_operator
 
 # NOTES_ALELUYA: Elvis impersonator + string interpolation ${name ?: 'you'}
 #

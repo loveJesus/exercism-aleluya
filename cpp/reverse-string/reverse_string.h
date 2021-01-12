@@ -4,10 +4,14 @@
 #define REVERSE_STRING_H
 #include <string>
 #include <iostream>
-using namespace std;
 
 namespace reverse_string {
-string reverse_string(string str_aleluya);
+    // @kunaltyagi : 
+    //  - Important to have within our namespace
+    //  | import only needed symbols | import in cpp
+    using namespace std; 
+
+    string reverse_string(string str_aleluya);
 
 }  // namespace reverse_string
 

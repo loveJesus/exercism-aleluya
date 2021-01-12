@@ -5,13 +5,19 @@
 #include <iostream>
 
 namespace reverse_string {
+
 string reverse_string(string str_aleluya) {
-    string rev_aleluya;
-    int len_aleluya = str_aleluya.length();    
-    for (   int i_aleluya = 0; 
-            i_aleluya < len_aleluya;
-            i_aleluya++ )
-        rev_aleluya += str_aleluya.at(len_aleluya - 1 - i_aleluya);
+    
+    int len_aleluya = str_aleluya.length();   
+
+    // @kunaltyagi exr: Not new string per iterating
+    string rev_aleluya(len_aleluya, ' ');
+
+    // @kunaltyagi exr : 
+    // for based range loops https://en.cppreference.com/w/cpp/language/range-for
+    int ridx_aleluya = len_aleluya - 1;
+    for (   auto chr_aleluya : str_aleluya ) 
+        rev_aleluya[ ridx_aleluya -- ] = chr_aleluya;
 
     return rev_aleluya;
 }

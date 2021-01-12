@@ -3,5 +3,39 @@
 -module(accumulate).
 -export([accumulate/2]).
 
-accumulate(Fn_aleluya, Ls_aleluya) ->
-  [Fn_aleluya(H_aleluya) || H_aleluya <- Ls_aleluya].
+reverse_aleluya([], R_aleluya) -> 
+    R_aleluya;
+
+reverse_aleluya([LsH_aleluya|LsT_aleluya], R_aleluya) ->
+    reverse_aleluya(
+        LsT_aleluya 
+        , [LsH_aleluya | R_aleluya]).
+
+
+
+accumulate_aleluya(_Fn_aleluya, Acc_aleluya, []) -> 
+    Acc_aleluya;
+
+accumulate_aleluya(Fn_aleluya, Acc_aleluya, [LsH_aleluya | LsT_aleluya]) ->    
+    accumulate_aleluya(
+        Fn_aleluya
+        , [Fn_aleluya(LsH_aleluya) | Acc_aleluya]
+        , LsT_aleluya).
+
+
+
+accumulate(_Fn_aleluya, []) ->
+    [];
+
+accumulate(Fn_aleluya, [LsH_aleluya | LsT_aleluya] ) ->
+    reverse_aleluya(
+        accumulate_aleluya(
+            Fn_aleluya
+            , [Fn_aleluya(LsH_aleluya)] 
+            , LsT_aleluya)
+        , []).
+
+
+
+
+

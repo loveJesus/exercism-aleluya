@@ -9,8 +9,9 @@ class Hamming {
             != strand2Aleluya.length() )
             throw new ArithmeticException()
         
-        [ strand1Aleluya.split('') 
-         ,strand2Aleluya.split('') ]
+        // @artamonov exr : use spread operator - Hallelujah
+        [ strand1Aleluya, strand2Aleluya ]
+            *.split('')
             .transpose()
             .count {
             chr1Aleluya, chr2Aleluya ->
