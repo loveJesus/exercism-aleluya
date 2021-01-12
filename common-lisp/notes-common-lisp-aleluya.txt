@@ -5,6 +5,9 @@
     - on loop, eq, etc
         - http://www.gigamonkeys.com/book/loop-for-black-belts.html
         - http://www.lispworks.com/documentation/HyperSpec/Body/06_ac.htm
+    - on assoc hallelujah
+        - acons http://www.lispworks.com/documentation/HyperSpec/Body/f_acons.htm) to construct them (or just use list and cons if you'd rather)
+        - use assoc (http://www.lispworks.com/documentation/HyperSpec/Body/f_assocc.htm) to look up a key in the associatino list.
 
 
 # NOTES_ALELUYA
@@ -15,3 +18,4 @@
 - mapcar zips lists also
 - loop is capable, http://www.gigamonkeys.com/book/loop-for-black-belts.html
 - no return (like with a body with a when that is not entered) returns nil
+- existence of associative lists, cdr is second item

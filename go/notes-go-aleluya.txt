@@ -3,6 +3,6 @@
 # FAMILY_ALELUYA: System language, sort of C like syntax
 
 # MENTORS_ALELUYA: 
-    - @ing4pres go fmt, golint, not ref param
+    - @ing4pres go fmt, golint, not ref param, use fmt package for strings, camelcase vars
 
 

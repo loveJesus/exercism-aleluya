@@ -2,7 +2,13 @@ For God so loved the world, that He gave His only begotten Son,
 that all who believe in Him should not perish but have everlasting life.
 
 tcl high-scores
-dart scrable score
+swift - leap
+clojure - w bob
+erlang - w accum
+delphi - w gigasecond
+go - hamming - HALLELUJAH
+pharo - isogram - aleluya
+groovy - w hamming - aleluya
 
 NOmentor
 - PHP
@@ -14,6 +20,8 @@ NOmentor
 - Typescript
 - Vim script
 
+ONOTE
+delphi @rpottsoh, @Artamonov
 
 ----------------
 Psalm 133, 6/4, 107 BPM

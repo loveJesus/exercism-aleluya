@@ -1,4 +1,9 @@
 # For God so loved the world, that He gave His only begotten Son, that all who believe in Him should not perish but have everlasting life
 
+
+# MENTORS_ALELUYA :
+ - @Artamanov 
+    - zip, foreach etc with check https://docs.groovy-lang.org/latest/html/api/org/codehaus/groovy/runtime/DefaultGroovyMethods.html
+
 # NOTES_ALELUYA: Elvis impersonator + string interpolation ${name ?: 'you'}
 #
