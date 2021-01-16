@@ -3,15 +3,11 @@ that all who believe in Him should not perish but have everlasting life.
 
 tcl high-scores
 
-rust - w parralel ALELUYA
-x64asm - resistor color ALELUYA
-clojure - w bob
 go - hamming - HALLELUJAH
 pharo - isogram - aleluya
 groovy - gigasecond
 swift - leap
 erlang - collatz Hallelujah
-elixir - bob aleluya
 cpp - space age 
 julia - nucleotide
 common lisp - leap
