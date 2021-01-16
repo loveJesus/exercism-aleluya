@@ -2,15 +2,25 @@ For God so loved the world, that He gave His only begotten Son,
 that all who believe in Him should not perish but have everlasting life.
 
 tcl high-scores
-swift - leap
+
+rust - w parralel ALELUYA
+x64asm - resistor color ALELUYA
 clojure - w bob
 go - hamming - HALLELUJAH
 pharo - isogram - aleluya
 groovy - gigasecond
-delphi - resistor-color
-java - w gigasecond
+swift - leap
 erlang - collatz Hallelujah
+elixir - bob aleluya
+cpp - space age 
+julia - nucleotide
+common lisp - leap
+raku - bob
+delphi - w resistorcolor
+r - raindrops
+javascript - gigasecond
 
+https://pasteimg.com/image/VD69
 NOmentor
 - PHP
 - Emacs lisp

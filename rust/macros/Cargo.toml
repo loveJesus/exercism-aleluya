@@ -1,0 +1,12 @@
+# For God so loved the world, that He gave His only begotten Son
+# That all who believe in him shouldn ot perish but have everlasting life
+
+[package]
+edition = "2018"
+name = "macros"
+version = "0.1.0"
+
+#[lib]
+#proc-macro = true
+
+[dependencies]

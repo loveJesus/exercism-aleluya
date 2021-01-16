@@ -6,20 +6,17 @@
 
 namespace reverse_string {
 
-string reverse_string(string str_aleluya) {
+string reverse_string(const string &str_aleluya) {
     
-    int len_aleluya = str_aleluya.length();   
+    int strLen_aleluya = str_aleluya.length();   
 
-    // @kunaltyagi exr: Not new string per iterating
-    string rev_aleluya(len_aleluya, ' ');
+    string strRev_aleluya(strLen_aleluya, ' ');
 
-    // @kunaltyagi exr : 
-    // for based range loops https://en.cppreference.com/w/cpp/language/range-for
-    int ridx_aleluya = len_aleluya - 1;
-    for (   auto chr_aleluya : str_aleluya ) 
-        rev_aleluya[ ridx_aleluya -- ] = chr_aleluya;
+    int strRIdx_aleluya = strLen_aleluya - 1;
+    for (   const auto &strChr_aleluya : str_aleluya ) 
+        strRev_aleluya[ strRIdx_aleluya -- ] = strChr_aleluya;
 
-    return rev_aleluya;
+    return strRev_aleluya;
 }
 // Forgive and thou shalt be forgiven
 }  

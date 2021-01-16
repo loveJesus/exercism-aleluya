@@ -4,12 +4,14 @@
 export const colorCode_aleluya = (color_aleluya) => 
     COLORS_ALELUYA.indexOf(color_aleluya);
 
-export const decodedValue = (colors_aleluya) => 
-    Number( colors_aleluya
-                .slice(0,2)
-                .map( (color_aleluya) => 
-                    String(colorCode_aleluya(color_aleluya)))
-                .join("") );
+
+export const decodedValue = (colors_aleluya) => {    
+    var [c1_aleluya, c2_aleluya] = colors_aleluya;
+
+    return (
+        10 * colorCode_aleluya(c1_aleluya)
+           + colorCode_aleluya(c2_aleluya) );
+}
 
 export const COLORS_ALELUYA = ['black', 'brown', 'red', 'orange', 'yellow', 
                                 'green', 'blue', 'violet', 'grey', 'white'];

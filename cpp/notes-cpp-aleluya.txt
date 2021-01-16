@@ -3,5 +3,6 @@
 # MENTORS_ALELUYA:
     @kunaltyagi :
         - on reverse_string aleluya
+            - pass by reference, and use const when immutable
             - Use 'using namespace std' within your own namespace, import only required types, or within cpp
             - cpp added range based for loops https://en.cppreference.com/w/cpp/language/range-for

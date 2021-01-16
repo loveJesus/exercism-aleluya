@@ -6,12 +6,9 @@
 #include <iostream>
 
 namespace reverse_string {
-    // @kunaltyagi : 
-    //  - Important to have within our namespace
-    //  | import only needed symbols | import in cpp
     using namespace std; 
 
-    string reverse_string(string str_aleluya);
+    string reverse_string(const string &str_aleluya);
 
 }  // namespace reverse_string
 

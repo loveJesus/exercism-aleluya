@@ -44,7 +44,7 @@ pub fn proc_lines_aleluya(
     let merging_map_aleluya = input_aleluya.iter().fold(
         HashMap::new(),
         |merging_map_aleluya, line_aleluya|
-        proc_str_frequency(line_aleluya, merging_map_aleluya)
+            proc_str_frequency(line_aleluya, merging_map_aleluya)
     );
     merge_map_aleluya(merged_map_aleluya, merging_map_aleluya);
 }
@@ -58,7 +58,7 @@ pub fn frequency(input_a_aleluya: &[&str], worker_count_aleluya: usize) -> HashM
     let mut idx_aleluya = 0;
     let mut chunk_delta_aleluya =
         (input_a_aleluya.len() / worker_count_aleluya ) +
-        (FINAL_LINE_INTERCALATION_ALELUYA * worker_count_aleluya);
+            (FINAL_LINE_INTERCALATION_ALELUYA * worker_count_aleluya);
     let mut chunk_max_aleluya = idx_aleluya + chunk_delta_aleluya;
 
     loop {

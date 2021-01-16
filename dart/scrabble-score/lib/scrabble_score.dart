@@ -13,11 +13,10 @@ const letter_map_aleluya = {
     
 int score(word_aleluya) =>
     word_aleluya
-        .toUpperCase()
         .split('')
         .fold( 0, 
             (sum_aleluya, letter_aleluya) => 
                 sum_aleluya + 
-                letter_map_aleluya[letter_aleluya] );
+                letter_map_aleluya[ letter_aleluya.toUpperCase() ] );
   
 // Jesus Christ is the light of the world

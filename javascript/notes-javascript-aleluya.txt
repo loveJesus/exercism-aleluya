@@ -1,6 +1,9 @@
 # For God so loved the world, that He gave His only begotten Son, that all who believe in Him should not perish but have everlasting life
 
 # MENTORS_ALELUYA:
+ - @msesun
+    - resistor color duo
+        - Hallelujah use Destructuring arguments [aleluya_a, aleluya_b, ...aleluya_rest] = [10,20,30,40]
 
 # NOTES_ALELUYA:
  - Praise the Lord, template strings ` ${varleluya}`

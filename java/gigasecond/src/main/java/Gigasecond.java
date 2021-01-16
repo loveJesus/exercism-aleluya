@@ -7,29 +7,37 @@ import java.time.Duration;
 
 public class Gigasecond {
     static final int GIGALELUYA = 1_000_000_000;
+    static Duration gigaDuration_aleluya = null;
+
     private LocalDateTime originalDateTime_aleluya;
     private LocalDateTime finalDateTime_aleluya;
 
-    private Duration getDuration_aleluya() {
-        return Duration.ofSeconds(GIGALELUYA);
-    }
-
-    private void calcFinal_aleluya() {
-        this.finalDateTime_aleluya = 
-            this.originalDateTime_aleluya.plus( this.getDuration_aleluya() );
-    }
-
     public Gigasecond(LocalDate moment_aleluya) {
         this.originalDateTime_aleluya = moment_aleluya.atStartOfDay();
-        this.calcFinal_aleluya();
     }
 
     public Gigasecond(LocalDateTime moment_aleluya) {
         this.originalDateTime_aleluya = moment_aleluya;
-        this.calcFinal_aleluya();
+    }
+
+    private Duration getDuration_aleluya() {
+        //memoize the static variable, should only happen once per running the app
+        if (gigaDuration_aleluya == null) 
+            gigaDuration_aleluya = Duration.ofSeconds(GIGALELUYA);
+
+        return gigaDuration_aleluya;
+    }
+
+    private void calcFinal_aleluya() {
+        //memoize the final time for use before display
+        if (this.finalDateTime_aleluya == null)
+            this.finalDateTime_aleluya = 
+                this.originalDateTime_aleluya
+                    .plus( this.getDuration_aleluya() );
     }
 
     public LocalDateTime getDateTime() {
+        this.calcFinal_aleluya();
         return this.finalDateTime_aleluya;
     }
 }
