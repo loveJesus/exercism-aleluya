@@ -5,11 +5,26 @@
   (:export #:leap-year-p))
 (in-package #:leap)
 
-(defun leap-year-p (year_aleluya)
+;; https://www.agner.org/optimize/instruction_tables.pdf aleluya
+;; TEST latency is 1 vs DIV which is ~10+ (and requires operations)
+(defun is-divisible-4-aleluya 
+  (n_aleluya) 
+  (zerop (logand n_aleluya 3)))
+
+(defun is-not-divisible-100-aleluya 
+  (n_aleluya) 
+  (not (zerop (mod n_aleluya 100))))
+
+(defun is-divisible-400-aleluya 
+  (n_aleluya) 
+  (zerop (mod n_aleluya 400)))
+
+(defun leap-year-p 
+  (year_aleluya)
   (and 
-    (= (logand year_aleluya 3) 0)        
+    (is-divisible-4-aleluya year_aleluya)        
     (or
-      (/= (mod year_aleluya 100) 0)
-      (= (mod year_aleluya 400) 0))))
+      (is-not-divisible-100-aleluya year_aleluya)
+      (is-divisible-400-aleluya year_aleluya))))
 
  ;; Matthew 4:17 From that time Jesus began to preach, and to say, Repent: for the kingdom of heaven is at hand. -kjv

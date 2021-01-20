@@ -4,40 +4,29 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Duration;
 
-
 public class Gigasecond {
-    static final int GIGALELUYA = 1_000_000_000;
-    static Duration gigaDuration_aleluya = null;
+    static final int GIGALELUYA 
+        = 1_000_000_000;
 
-    private LocalDateTime originalDateTime_aleluya;
+    static Duration gigaDuration_aleluya 
+        = Duration.ofSeconds(GIGALELUYA);
+
     private LocalDateTime finalDateTime_aleluya;
 
     public Gigasecond(LocalDate moment_aleluya) {
-        this.originalDateTime_aleluya = moment_aleluya.atStartOfDay();
+        this.finalDateTime_aleluya 
+            = moment_aleluya
+                .atStartOfDay()
+                .plus(gigaDuration_aleluya);
     }
 
     public Gigasecond(LocalDateTime moment_aleluya) {
-        this.originalDateTime_aleluya = moment_aleluya;
-    }
-
-    private Duration getDuration_aleluya() {
-        //memoize the static variable, should only happen once per running the app
-        if (gigaDuration_aleluya == null) 
-            gigaDuration_aleluya = Duration.ofSeconds(GIGALELUYA);
-
-        return gigaDuration_aleluya;
-    }
-
-    private void calcFinal_aleluya() {
-        //memoize the final time for use before display
-        if (this.finalDateTime_aleluya == null)
-            this.finalDateTime_aleluya = 
-                this.originalDateTime_aleluya
-                    .plus( this.getDuration_aleluya() );
+        this.finalDateTime_aleluya 
+            = moment_aleluya
+                .plus(gigaDuration_aleluya);
     }
 
     public LocalDateTime getDateTime() {
-        this.calcFinal_aleluya();
         return this.finalDateTime_aleluya;
     }
 }

@@ -3,7 +3,6 @@ that all who believe in Him should not perish but have everlasting life.
 
 julia - nucleotide
 tcl - high-scores
-swift - leap
 pharo - isogram - aleluya
 groovy - gigasecond
 erlang - collatz Hallelujah
@@ -11,6 +10,8 @@ cpp - space age
 r - raindrops
 javascript - gigasecond
 delphi - space age
+clisp - anagram
+clojure - w 
 
 https://pasteimg.com/image/VD69
 NOmentor

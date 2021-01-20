@@ -2,36 +2,49 @@
 ;; that all who believe in Him should not perish but have everlasting life.
 (ns bob)
 
-(defn is-blank-trimmed-aleluya? 
- [str-aleluya] 
- (clojure.string/blank? str-aleluya))
+(defprotocol BobProtoAleluya 
+ (silent-aleluya? [this] )
+ (shouting-aleluya? [this])
+ (question-aleluya? [this])
+ (response-aleluya [this]))
 
-(defn is-question-trimmed-aleluya? 
- [str-aleluya] 
- (clojure.string/ends-with? str-aleluya "?"))
+(defrecord BobAleluya [tstr-aleluya] 
+ BobProtoAleluya
+  (silent-aleluya? [this] 
+   (clojure.string/blank? tstr-aleluya) )
 
+  (shouting-aleluya? [this]
+   (and
+    (= tstr-aleluya (clojure.string/upper-case tstr-aleluya)  )
+    (not= tstr-aleluya (clojure.string/lower-case tstr-aleluya) )))  
 
-(defn is-shouting-trimmed-aleluya? 
- [str-aleluya] 
- (and
-  (= str-aleluya (clojure.string/upper-case str-aleluya)  )
-  (not= str-aleluya (clojure.string/lower-case str-aleluya) )))
+  (question-aleluya? [this]
+   (clojure.string/ends-with? tstr-aleluya    "?"))
 
+  (response-aleluya [this]
+   (cond
+    (.silent-aleluya? this)     "Fine. Be that way!"
+
+    (and 
+     (.shouting-aleluya? this)
+     (.question-aleluya? this)) "Calm down, I know what I'm doing!"
+
+    (.shouting-aleluya? this)   "Whoa, chill out!"
+
+    (.question-aleluya? this)   "Sure."
+    
+    :else                       "Whatever.")))
+
+  
+
+(defn new-bob-aleluya 
+ "Appropriate constructor for BobAleluya"
+ [str-aleluya]
+ (->BobAleluya (clojure.string/trim str-aleluya)))
 
 (defn response-for [str-aleluya]
- (let [s-aleluya (clojure.string/trim str-aleluya)]
-  (cond
-   (is-blank-trimmed-aleluya? s-aleluya) 
-    "Fine. Be that way!"  
-   (is-shouting-trimmed-aleluya? s-aleluya)
-    (if 
-     (is-question-trimmed-aleluya? s-aleluya)
-     "Calm down, I know what I'm doing!"
-     "Whoa, chill out!")
-   (is-question-trimmed-aleluya? s-aleluya) 
-    "Sure."
-   :else 
-    "Whatever.")))
+ (let [bob-aleluya (new-bob-aleluya str-aleluya)]
+  (.response-aleluya bob-aleluya)))
 
 
 ;; Matthew 18:3 And said, Verily I say unto you, 
