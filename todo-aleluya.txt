@@ -11,6 +11,7 @@ javascript - gigasecond
 delphi - space age
 clisp - anagram
 go - w hamming
+clojure - armstrong
 
 https://pasteimg.com/image/VD69
 NOmentor
