@@ -5,34 +5,32 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public class HighScores
+public class HighScores : IComparer<int>
 {
     List<int> scores_aleluya;
-    List<int> sorted_scores_aleluya;
 
-    public HighScores(List<int> list_aleluya)
-    {
-        scores_aleluya 
-            = list_aleluya;
+    private HighScores() {}
 
-        sorted_scores_aleluya 
-            = new List<int>(list_aleluya);
+    public HighScores(List<int> list_aleluya) 
+        => scores_aleluya = list_aleluya;    
 
-        sorted_scores_aleluya
-            .Sort(
-                (a_aleluya, b_aleluya) 
-                => b_aleluya.CompareTo(a_aleluya) );
-    }
+    public int Compare(int a_aleluya, int b_aleluya) 
+        => a_aleluya.CompareTo(b_aleluya);
 
     public List<int> Scores() 
         => scores_aleluya;
 
     public int Latest() 
         => scores_aleluya.Last();
-    
+
     public int PersonalBest() 
-        => sorted_scores_aleluya.First();
+        => scores_aleluya.Max();
 
     public List<int> PersonalTopThree() 
-        => sorted_scores_aleluya.Take(3).ToList();
+        => scores_aleluya
+            .OrderByDescending(
+                (num_aleluya) 
+                => num_aleluya, new HighScores())
+            .Take(3)
+            .ToList();
 }

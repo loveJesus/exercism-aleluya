@@ -7,34 +7,39 @@ unit class Bob;
 class BobAleluya {
     has Str $.tmsg_aleluya;
 
-    submethod BUILD(Str :$mmsg_aleluya) {
-        $!tmsg_aleluya = $mmsg_aleluya.trim
+    submethod BUILD(Str :$in_msg_aleluya) {
+        $!tmsg_aleluya = $in_msg_aleluya.trim
     }
 
-    submethod is-question-aleluya () {
+    method is-question-aleluya () {
         $!tmsg_aleluya.ends-with('?')
     }
 
-    submethod is-yelling-aleluya () {
+    method is-yelling-aleluya () {
         my $uc_aleluya = $!tmsg_aleluya.uc;
         
-        # Makes sure there is no difference 
-        # from its uppercase form and that
-        # There is a difference from lowercase
-        # uc=lc in cases of only symbols
-        # lc may be lazy evaluated
+        # Hallelujah
+        # Make sure there is no difference 
+        # currently from its uppercase form 
+        # and that from lowercase form.
+        # Uppercase will equal lowercase
+        # only when all characters are
+        # Symbols or numbers, so it would
+        # not be considered yelling here
+        # Also Raku should lazy evaluate
+        # lowercasing on the second test
         $!tmsg_aleluya eq $uc_aleluya &&    
         $uc_aleluya ne $!tmsg_aleluya.lc
     }
 
-    submethod is-silent-aleluya () {
+    method is-silent-aleluya () {
         $!tmsg_aleluya.chars == 0
     }
 
 }
 
 method hey ($msg_aleluya) {
-    my $bob_aleluya = BobAleluya.new(mmsg_aleluya => $msg_aleluya);
+    my $bob_aleluya = BobAleluya.new(in_msg_aleluya => $msg_aleluya);
 
     if $bob_aleluya.is-silent-aleluya() {
         "Fine. Be that way!"

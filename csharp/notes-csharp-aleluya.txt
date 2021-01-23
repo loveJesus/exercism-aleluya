@@ -2,6 +2,9 @@
 
 # MENTORS_ALELUYA:
     - @miguelbernard - spaceage ok
+    - @sanderploegsma
+        - High Scores Aleluya
+            - Use OrderByDescending and Max from Linq
     
 # NOTES_ALELUYA:
     - Very reasonable, fun, more versatile than java
