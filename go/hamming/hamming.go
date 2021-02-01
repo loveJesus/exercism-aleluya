@@ -11,13 +11,14 @@ import (
 // Distance calculates hamming distance between two DNA strands
 func Distance(aDNAleluya, bDNAleluya string) (int, error) {
 	if len(aDNAleluya) != len(bDNAleluya) {
-		return 0, errors.New("Different string length Aleluya")
+		return 0, errors.New("different string length aleluya")
 	}
 
-	sumAleluya := 0 
+	sumAleluya := 0
 	bRunesAleluya := []rune(bDNAleluya)
+	aRunesAleluya := []rune(aDNAleluya)
 
-	for idxAleluya, aCharAleluya := range aDNAleluya {
+	for idxAleluya, aCharAleluya := range aRunesAleluya {
 		bCharAleluya := bRunesAleluya[idxAleluya]
 		if bCharAleluya != aCharAleluya {
 			sumAleluya++

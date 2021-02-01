@@ -10,8 +10,11 @@ r - raindrops
 javascript - gigasecond
 delphi - space age
 clisp - anagram
-go - w hamming
+go - raindrops
 clojure - armstrong
+gigasecond - crystal
+cpp - space age
+f# - queen attack
 
 https://pasteimg.com/image/VD69
 NOmentor

@@ -1,42 +1,42 @@
-defmodule BeansSongTest do
+defmodule BeanSongTest do
   use ExUnit.Case
 
   describe "verse" do
     # @tag :pending
     test "first generic verse" do
-      assert BeansSong.verse(99) == """
+      assert BeanSong.verse(99) == """
              99 bottles of beans on the wall, 99 bottles of beans.
              Take one down and pass it around, 98 bottles of beans on the wall.
              """
     end
 
-    @tag :pending
+    #@tag :pending
     test "last generic verse" do
-      assert BeansSong.verse(3) == """
+      assert BeanSong.verse(3) == """
              3 bottles of beans on the wall, 3 bottles of beans.
              Take one down and pass it around, 2 bottles of beans on the wall.
              """
     end
 
-    @tag :pending
+    #@tag :pending
     test "verse with 2 bottles" do
-      assert BeansSong.verse(2) == """
+      assert BeanSong.verse(2) == """
              2 bottles of beans on the wall, 2 bottles of beans.
              Take one down and pass it around, 1 bottle of beans on the wall.
              """
     end
 
-    @tag :pending
+    #@tag :pending
     test "verse with 1 bottle" do
-      assert BeansSong.verse(1) == """
+      assert BeanSong.verse(1) == """
              1 bottle of beans on the wall, 1 bottle of beans.
              Take it down and pass it around, no more bottles of beans on the wall.
              """
     end
 
-    @tag :pending
+    #@tag :pending
     test "verse with 0 bottles" do
-      assert BeansSong.verse(0) == """
+      assert BeanSong.verse(0) == """
              No more bottles of beans on the wall, no more bottles of beans.
              Go to the store and buy some more, 99 bottles of beans on the wall.
              """
@@ -44,9 +44,9 @@ defmodule BeansSongTest do
   end
 
   describe "lyrics" do
-    @tag :pending
+    #@tag :pending
     test "first two verses" do
-      assert BeansSong.lyrics(99..98) == """
+      assert BeanSong.lyrics(99..98) == """
              99 bottles of beans on the wall, 99 bottles of beans.
              Take one down and pass it around, 98 bottles of beans on the wall.
 
@@ -55,9 +55,9 @@ defmodule BeansSongTest do
              """
     end
 
-    @tag :pending
+    #@tag :pending
     test "last three verses" do
-      assert BeansSong.lyrics(2..0) == """
+      assert BeanSong.lyrics(2..0) == """
              2 bottles of beans on the wall, 2 bottles of beans.
              Take one down and pass it around, 1 bottle of beans on the wall.
 
@@ -69,9 +69,9 @@ defmodule BeansSongTest do
              """
     end
 
-    @tag :pending
+    #@tag :pending
     test "all verses" do
-      assert BeansSong.lyrics() == """
+      assert BeanSong.lyrics() == """
              99 bottles of beans on the wall, 99 bottles of beans.
              Take one down and pass it around, 98 bottles of beans on the wall.
 

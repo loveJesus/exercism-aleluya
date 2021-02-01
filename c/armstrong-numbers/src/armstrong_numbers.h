@@ -6,8 +6,5 @@
 #include <stdbool.h>
 
 bool is_armstrong_number(int candidate_aleluya);
-int pow_aleluya(int num_aleluya, int exp_aleluya);
-int count_digits_aleluya(int num_aleluya);
-
 
 #endif

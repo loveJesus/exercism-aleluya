@@ -28,6 +28,12 @@ var testCases = []struct {
 		1,
 		false,
 	},
+	{
+	         "aüa",
+	         "aÃa",
+	       1,
+	 false,
+},
 	{ // long identical strands
 		"GGACTGAAATCTG",
 		"GGACTGAAATCTG",
