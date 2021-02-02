@@ -7,12 +7,12 @@ groovy - gigasecond
 erlang - collatz Hallelujah
 cpp - space age 
 r - raindrops
+elixir - robot
 javascript - gigasecond
 delphi - space age
 clisp - anagram
 go - raindrops
 clojure - armstrong
-gigasecond - crystal
 cpp - space age
 f# - queen attack
 
