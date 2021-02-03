@@ -13,7 +13,6 @@ blue_aleluya: db "blue", 0
 violet_aleluya: db "violet", 0
 grey_aleluya: db "grey", 0
 white_aleluya: db "white", 0
-finish_aleluya: db 0
 
 ptrs_aleluya: dq black_aleluya, brown_aleluya, red_aleluya, orange_aleluya, yellow_aleluya, green_aleluya, blue_aleluya, violet_aleluya, grey_aleluya, white_aleluya, 0
 
@@ -25,15 +24,17 @@ global color_code
 ; ret rax = int color code HALLELUJAH
 color_code:
     mov rax, 0
-    mov r11, ptrs_aleluya ; Pointer to color within color index buffer
+    lea r11, [rel ptrs_aleluya] ; Pointer to color within color index buffer
     mov rcx, 0
     mov rdx, 0
 
 cmp_color_aleluya:
     mov r10, [r11]
-    cmp r10, qword 0
-    je ret_aleluya ; Color wasn't found... should error, hallelujah
-    jmp cmp_color_str_aleluya
+    cmp r10, qword 0 ;Make sure we haven't reached end of ptrs_aleluya
+    jne cmp_color_str_aleluya
+    mov rax, -1 ; -1 for color not found, hallelujah
+    ret   
+
 ret_color_aleluya:
     cmp r8, 1
     je ret_aleluya
@@ -73,5 +74,5 @@ global colors
 ; Hallelujah
 ; ret rax = ptr to char* with null end
 colors:
-    mov rax, ptrs_aleluya
+    lea rax, [rel ptrs_aleluya]
     ret

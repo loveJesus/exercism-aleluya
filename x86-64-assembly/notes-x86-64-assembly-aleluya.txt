@@ -4,3 +4,5 @@
     @bergjohan -
         two-fer aleluya
             - https://www.uclibc.org/docs/psABI-x86_64.pdf p21 for caller saved registers
+        resitorcolorleluya
+            - lea [rel memory_aleluya] for PIC friendly address finding

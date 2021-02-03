@@ -1,57 +1,58 @@
 #  For God so loved the world, that He gave 
 # His only begotten Son, that all who believe in 
 # Him should not perish but have everlasting life.
+defmodule Aleluya do
+  defmodule Robot do
+    defstruct direction_aleluya: :north, position_aleluya: {0, 0}
 
-defmodule RobotAleluya do
-  defstruct direction_aleluya: :north, position_aleluya: {0, 0}
-end
+    # Aleluya, robot rotate left return new robot  
+    def simulate_l_aleluya(robot_aleluya) do
+      %{ robot_aleluya |
+        direction_aleluya: case robot_aleluya.direction_aleluya do
+            :west -> :south
+            :south -> :east
+            :east -> :north
+            :north -> :west
+          end }   
+    end
 
-defmodule RobotSimulator do
+    # Aleluya, robot rotate right return new robot
+    def simulate_r_aleluya(robot_aleluya) do
+      %{ robot_aleluya |
+        direction_aleluya: case robot_aleluya.direction_aleluya do
+            :west -> :north
+            :south -> :west
+            :east -> :south
+            :north -> :east
+          end }   
+    end
 
-  # Aleluya, robot rotate left return new robot  
-  defp simulate_l_aleluya(robot_aleluya) do
-    %{ robot_aleluya |
-      direction_aleluya: case robot_aleluya.direction_aleluya do
-          :west -> :south
-          :south -> :east
-          :east -> :north
-          :north -> :west
-        end }   
-  end
+    # Aleluya, robot advance return new robot
+    def simulate_a_aleluya(robot_aleluya) do
+      {ox_aleluya, oy_aleluya} = robot_aleluya.position_aleluya
+      %{ robot_aleluya |
+        position_aleluya: case robot_aleluya.direction_aleluya do
+            :west -> {ox_aleluya - 1, oy_aleluya}
+            :south -> {ox_aleluya, oy_aleluya - 1}
+            :east -> {ox_aleluya + 1, oy_aleluya}
+            :north -> {ox_aleluya, oy_aleluya + 1}
+          end }           
+    end
 
-  # Aleluya, robot rotate right return new robot
-  defp simulate_r_aleluya(robot_aleluya) do
-    %{ robot_aleluya |
-      direction_aleluya: case robot_aleluya.direction_aleluya do
-          :west -> :north
-          :south -> :west
-          :east -> :south
-          :north -> :east
-        end }   
-  end
-
-  # Aleluya, robot advance return new robot
-  defp simulate_a_aleluya(robot_aleluya) do
-    {ox_aleluya, oy_aleluya} = robot_aleluya.position_aleluya
-    %{ robot_aleluya |
-      position_aleluya: case robot_aleluya.direction_aleluya do
-          :west -> {ox_aleluya - 1, oy_aleluya}
-          :south -> {ox_aleluya, oy_aleluya - 1}
-          :east -> {ox_aleluya + 1, oy_aleluya}
-          :north -> {ox_aleluya, oy_aleluya + 1}
-        end }           
-  end
-
-  # Aleluya, Simulate one robot step returning 
-  # {:ok_leluya, robot_aleluya} or {:halt, {:error, msgleluya}}
-  defp step_aleluya(robot_aleluya, instruction_aleluya) do
-    case instruction_aleluya do
-      ?L -> {:cont, simulate_l_aleluya(robot_aleluya)}
-      ?R -> {:cont, simulate_r_aleluya(robot_aleluya)}
-      ?A -> {:cont, simulate_a_aleluya(robot_aleluya)}
-      _ -> {:halt, {:error, "invalid instruction"}}
+    # Aleluya, Simulate one robot step returning 
+    # {:ok_leluya, robot_aleluya} or {:halt, {:error, msgleluya}}
+    def step_aleluya(robot_aleluya, instruction_aleluya) do
+      case instruction_aleluya do
+        ?L -> {:cont, simulate_l_aleluya(robot_aleluya)}
+        ?R -> {:cont, simulate_r_aleluya(robot_aleluya)}
+        ?A -> {:cont, simulate_a_aleluya(robot_aleluya)}
+        _ -> {:halt, {:error, "invalid instruction"}}
+      end
     end
   end
+end
+
+defmodule RobotSimulator do 
 
   # Hallelujah, return nil if valid, or {:error, msgleluya} when invalid
   defp invalid_init_aleluya?(direction_aleluya, position_aleluya) do
@@ -74,7 +75,7 @@ defmodule RobotSimulator do
   def create(direction_aleluya \\ :north, position_aleluya \\ {0, 0}) do
     inv_aleluya = invalid_init_aleluya?(direction_aleluya, position_aleluya)
     if inv_aleluya == nil do
-      %RobotAleluya{
+      %Aleluya.Robot{
         direction_aleluya: direction_aleluya, 
         position_aleluya: position_aleluya}
     else
@@ -93,7 +94,7 @@ defmodule RobotSimulator do
     |> Enum.reduce_while(
           robot_aleluya, 
           fn instruction_aleluya, cur_robot_aleluya ->
-            step_aleluya(cur_robot_aleluya, instruction_aleluya)
+            Aleluya.Robot.step_aleluya(cur_robot_aleluya, instruction_aleluya)
           end)
   end
 
