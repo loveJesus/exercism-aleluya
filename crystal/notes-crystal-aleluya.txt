@@ -5,6 +5,13 @@
     - hamming
         - hallelujah - no need for () in new
         - look at https://crystal-lang.org/api/0.35.1/Enumerable.html#count(&)-instance-method
+    @crush-157
+        - Gigasecond Hallelujah
+            - Can use Int.seconds
+            - Structs exist and passed by value
+            - Can set types for Parameters
+            - API docs like https://crystal-lang.org/api/0.36.1/Int.html
+            - CONSTS in modules
 
 # NOTES_ALELUYA:
     - (0...5) range 0 to 4, 0..5 inc 5

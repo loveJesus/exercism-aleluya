@@ -15,8 +15,8 @@ clojure - armstrong
 cpp - space age
 f# - queen attack
 swift - gigasecond
-c - resistor color
-asm - space age
+crystal - rna-transcription
+julia - pangram
 
 https://pasteimg.com/image/VD69
 NOmentor
