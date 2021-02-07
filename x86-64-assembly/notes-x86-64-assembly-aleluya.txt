@@ -6,3 +6,6 @@
             - https://www.uclibc.org/docs/psABI-x86_64.pdf p21 for caller saved registers
         resitorcolorleluya
             - lea [rel memory_aleluya] for PIC friendly address finding
+
+# NOTES_ALELUYA
+    - dq for double dd for float            

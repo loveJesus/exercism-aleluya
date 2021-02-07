@@ -2,11 +2,10 @@
 # His only begotten Son, that all who believe in 
 # Him should not perish but have everlasting life.
 module Gigasecond
-    GIGALELUYA = 1_000_000_000
-    GIGASECOND_ALELUYA = Time::Span.new(seconds: GIGALELUYA)
+    GIGA_ALELUYA = 1_000_000_000
 
-    def self.from(date_aleluya)
-        date_aleluya + GIGASECOND_ALELUYA
+    def self.from(original_aleluya : Time)
+        original_aleluya + GIGA_ALELUYA.seconds
     end
 end
 # Mat 7:12 Therefore all things whatsoever ye would that 

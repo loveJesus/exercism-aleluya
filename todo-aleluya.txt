@@ -7,7 +7,6 @@ groovy - gigasecond
 erlang - collatz Hallelujah
 cpp - space age 
 r - raindrops
-elixir - robot
 javascript - gigasecond
 delphi - space age
 clisp - anagram
@@ -15,6 +14,9 @@ go - raindrops
 clojure - armstrong
 cpp - space age
 f# - queen attack
+swift - gigasecond
+c - resistor color
+asm - space age
 
 https://pasteimg.com/image/VD69
 NOmentor
@@ -66,3 +68,6 @@ B: down the moun-tains of zi/on
 
 A: for there the Lo/rd
 B: co-man-ded life for ev/er
+
+
+1-800-875-6467 logos
