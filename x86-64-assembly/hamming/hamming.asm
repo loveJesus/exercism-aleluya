@@ -9,19 +9,19 @@ global distance
 ; rsi - * char, str_b_aleluya
 ; ret rax - int distance, -1 on error
 ; ~vars:
-;   rcx - index
-;   dh,dl - hold the chars
+;   r9 - index
+;   dl,cl - hold the chars
 distance:
     mov rax, 0
-    mov rcx, 0 ; index
+    mov r9, 0 ; index
 
 loopleluya:
-    mov dl, [rdi + rcx]
-    mov dh, [rsi + rcx]
-    inc rcx
-    test dl, dh ; test for at least one is 0
+    mov dl, [rdi + r9]
+    mov cl, [rsi + r9]
+    inc r9
+    test cl, dl ; test for at least one is 0
     je is_end_aleluyap     
-    cmp dh, dl 
+    cmp cl, dl 
     je loopleluya
     inc rax
     jmp loopleluya 
@@ -31,7 +31,7 @@ error_leluya:
     ret
 
 is_end_aleluyap:
-    cmp dh, dl ; both must be 0
+    cmp cl, dl ; both must be 0
     jne error_leluya
     ret
 

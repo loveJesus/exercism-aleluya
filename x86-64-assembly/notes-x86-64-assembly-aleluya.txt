@@ -6,6 +6,8 @@
             - https://www.uclibc.org/docs/psABI-x86_64.pdf p21 for caller saved registers
         resitorcolorleluya
             - lea [rel memory_aleluya] for PIC friendly address finding
+        hamming aleluya
+            - Avoid using high registers, dependency problems p61 https://www.agner.org/optimize/optimizing_assembly.pdf
 
 # NOTES_ALELUYA
     - dq for double dd for float            
