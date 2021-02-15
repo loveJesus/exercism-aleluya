@@ -16,6 +16,8 @@
             - Interpolation transforms to string HALLELUJAh
     - @feitelogram
         - points aleluya
+        - Markdown
+            -  ✡ Aleluya
     - @frerich
         - robot ALELUYA
             - Hallelujah, can do submodules
