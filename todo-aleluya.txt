@@ -18,7 +18,6 @@ swift - gigasecond
 crystal - rna-transcription
 julia - pangram
 
-https://pasteimg.com/image/VD69
 NOmentor
 - PHP
 - Emacs lisp
@@ -68,6 +67,3 @@ B: down the moun-tains of zi/on
 
 A: for there the Lo/rd
 B: co-man-ded life for ev/er
-
-
-1-800-875-6467 logos
