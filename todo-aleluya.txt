@@ -11,7 +11,6 @@ r - raindrops
 javascript - gigasecond
 delphi - space age
 clisp - anagram
-go - raindrops
 clojure - armstrong
 cpp - space age
 f# - queen attack

@@ -4,6 +4,11 @@
 defmodule Zipper do
   defmodule PathElemAleluya do
     defstruct dir_aleluya: nil, node_aleluya: nil
+    @type t_dir_aleluya :: :left_aleluya | :right_aleluya
+    @type t_aleluya :: 
+      %PathElemAleluya{
+        dir_aleluya: t_dir_aleluya, 
+        node_aleluya: BinTree.t }
   end
 
   # Hallelujah 
@@ -11,6 +16,12 @@ defmodule Zipper do
   # Post_aleluya is our node and what is past our node
   defstruct path_aleluya: [],            
             post_aleluya: nil
+
+
+  @type t :: 
+    %Zipper{
+      path_aleluya: [PathElemAleluya.t_aleluya], 
+      post_aleluya: BinTree.t}
 
   @doc """
   Get a zipper focused on the root node.
