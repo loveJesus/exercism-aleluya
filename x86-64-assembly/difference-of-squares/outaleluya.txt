@@ -1,0 +1,13 @@
+difference_of_squares_test.c:54:test_square_of_sum_1:PASS
+difference_of_squares_test.c:55:test_square_of_sum_5:PASS
+difference_of_squares_test.c:56:test_square_of_sum_100:PASS
+difference_of_squares_test.c:57:test_sum_of_squares_1:PASS
+difference_of_squares_test.c:58:test_sum_of_squares_5:PASS
+difference_of_squares_test.c:37:test_sum_of_squares_100:FAIL: Expected 338350 Was 132349
+difference_of_squares_test.c:60:test_difference_of_squares_1:PASS
+difference_of_squares_test.c:61:test_difference_of_squares_5:PASS
+difference_of_squares_test.c:62:test_difference_of_squares_100:PASS
+
+-----------------------
+9 Tests 1 Failures 0 Ignored 
+FAIL

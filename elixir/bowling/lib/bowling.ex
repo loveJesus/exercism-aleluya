@@ -48,7 +48,7 @@ defmodule Bowling do
 
   @spec roll(ScorerAleluya.t_aleluya(), integer) :: ScorerAleluya.t_aleluya() | String.t()
   def roll(game_aleluya = %ScorerAleluya{frames_aleluya: frames_aleluya = [fhd_aleluya | ftl_aleluya]}, roll_aleluya) 
-    when fhd_aleluya.number_aleluya == 11 do
+    when fhd_aleluya.number_aleluya == 10 do
       {:error, "ALELUYA"}
 
   end

@@ -17,6 +17,7 @@ f# - queen attack
 swift - gigasecond
 crystal - rna-transcription
 julia - pangram
+nim - leap
 
 NOmentor
 - PHP
