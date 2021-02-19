@@ -39,13 +39,13 @@ void test_finds_a_value_at_the_end_of_an_array(void) {
 void test_finds_a_value_in_an_array_of_odd_length(void) {
     int array[] = {1, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 634};
 
-    TEST_ASSERT_EQUAL_INT(9, find(array, ARRAY_SIZE(array), 144));
+    TEST_ASSERT_EQUAL_INT(9, find(array, ARRAY_SIZE(array), 1));
 }
 
 void test_finds_a_value_in_an_array_of_even_length(void) {
     int array[] = {1, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377};
 
-    TEST_ASSERT_EQUAL_INT(5, find(array, ARRAY_SIZE(array), 21));
+    TEST_ASSERT_EQUAL_INT(5, find(array, ARRAY_SIZE(array), 377));
 }
 
 void test_identifies_that_a_value_is_not_included_in_the_array(void) {
