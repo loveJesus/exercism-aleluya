@@ -3,17 +3,13 @@
 BITS 64
 DEFAULT REL
 global is_paired
-MAXSTACK_ALELUYA EQU 4096
+
 
 
 section .data
     ;ascii (40 )41 {123 }125 [91 ]93  - Hallelujah
-    pops_aleluya: db 40, 123, 91, 0 ;Praise the Lord, could add more bracket types here
-    depops_aleluya: db 41, 125, 93, 0 ;Hallelujah closing bracket must match opening bracket index
-
-section .bss
-    stack_aleluya: resb MAXSTACK_ALELUYA
-
+    pushes_aleluya: db '({[', 0 ;Praise the Lord, could add more bracket types here
+    pops_aleluya: db ')}]', 0 ;Hallelujah closing bracket must match opening bracket index
 
 section .text
 
@@ -24,8 +20,7 @@ section .text
 ;   rax - return 0 or 1 if it is a paired
 
 ;r8 -> input string ptr aleluya
-;r10 -> bracket stack depth aleluya
-;r12 -> bracket stack ptr aleluya
+;r12 -> hold rsp aleluya
 ;r13 -> opening bracket array (null terminated) aleluya
 ;r14 -> closing bracket array (null terminated) aleluya
 ;cl -> input string current char aleluya
@@ -33,10 +28,10 @@ section .text
 ;r11 -> temporary index into arrays depending upon block aleluya
 is_paired:
     mov r8, 0
-    mov r10, 0
-    mov r12, stack_aleluya
-    mov r13, pops_aleluya
-    mov r14, depops_aleluya
+    mov r12, rsp
+    push 0
+    mov r13, pushes_aleluya
+    mov r14, pops_aleluya
 
 _loop_str_aleluya: 
     mov cl, [rdi + r8]
@@ -45,59 +40,57 @@ _loop_str_aleluya:
     inc r8
     mov r11, 0
 
-_loop_pops_aleluya:
+_loop_pushes_aleluya:
     mov dl, [r13 + r11]
     cmp dl, 0
-    je _is_not_pops_aleluya
+    je _is_not_push_aleluya
+    cmp dl, cl
+    je _is_push_aleluya
+    inc r11
+    jmp _loop_pushes_aleluya
+
+
+_is_not_push_aleluya:
+    mov r11, 0
+
+_loop_pops_aleluya:
+    mov dl, [r14 + r11]
+    cmp dl, 0
+    je _loop_str_aleluya
     cmp dl, cl
     je _is_pops_aleluya
     inc r11
     jmp _loop_pops_aleluya
 
 
-_is_not_pops_aleluya:
-    mov r11, 0
-
-_loop_depops_aleluya:
-    mov dl, [r14 + r11]
-    cmp dl, 0
-    je _loop_str_aleluya
-    cmp dl, cl
-    je _is_depops_aleluya
-    inc r11
-    jmp _loop_depops_aleluya
-
-
-_is_pops_aleluya:
-    mov dl, [r14 + r11]
-    mov [r12 + r10], dl
-    inc r10
-    cmp r10, MAXSTACK_ALELUYA
-    jge _stack_overflow_aleluya
+_is_push_aleluya:
+    movzx rdx, byte [r14 + r11]
+    push rdx
     jmp _loop_str_aleluya
 
     
 
 
 _paired_chk1_aleluya:
+    pop r10
     cmp r10, 0
     jne _not_all_closed_aleluya
     mov rax, 1
     ret
 
-_is_depops_aleluya:
-    dec r10
-    jo _empty_pops_stack_error_aleluya
+_is_pops_aleluya:
+    pop rdx
+    cmp rdx, 0
+    je _empty_pops_stack_error_aleluya
 
-    mov dl, [r12 + r10]
     cmp dl, cl 
     je _loop_str_aleluya
     ; Wrong bracket close if reaching here and fail - Glory to Jesus
-_wrong_depops_aleluya:
-_stack_overflow_aleluya:
+_wrong_pops_aleluya:
 _empty_pops_stack_error_aleluya:
 _not_all_closed_aleluya:
     mov rax, 0
+    mov rsp, r12
     ret
 
 
