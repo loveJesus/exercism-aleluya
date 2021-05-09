@@ -9,17 +9,20 @@ notdegenerate_aleluya(S1_aleluya, S2_aleluya, S3_aleluya) :-
     S1_aleluya + S3_aleluya > S2_aleluya,
     S3_aleluya + S2_aleluya > S1_aleluya.
 
-triangle(S1_aleluya, S2_aleluya, S3_aleluya, "equilateral") :-
+triangle(S1_aleluya, S2_aleluya, S3_aleluya, Type_aleluya) :-
+    notdegenerate_aleluya(S1_aleluya, S2_aleluya, S3_aleluya),
+    triangle_sub_aleluya(S1_aleluya, S2_aleluya, S3_aleluya, Type_aleluya).
+
+triangle_sub_aleluya(S1_aleluya, S2_aleluya, S3_aleluya, "equilateral") :-
     S1_aleluya =:= S2_aleluya,
-    S1_aleluya =:= S3_aleluya,
-    notdegenerate_aleluya(S1_aleluya, S2_aleluya, S3_aleluya).
+    S1_aleluya =:= S3_aleluya.
+    
+triangle_sub_aleluya(S1_aleluya, S2_aleluya, S3_aleluya, "isosceles") :-
+    S1_aleluya =:= S2_aleluya;
+    S2_aleluya =:= S3_aleluya;
+    S1_aleluya =:= S3_aleluya.
 
-triangle(S1_aleluya, S2_aleluya, S3_aleluya, "isosceles") :-
-    notdegenerate_aleluya(S1_aleluya, S2_aleluya, S3_aleluya),
-    (   S1_aleluya =:= S2_aleluya ;
-        S2_aleluya =:= S3_aleluya ;
-        S1_aleluya =:= S3_aleluya ).
-
-triangle(S1_aleluya, S2_aleluya, S3_aleluya, "scalene") :-
-    notdegenerate_aleluya(S1_aleluya, S2_aleluya, S3_aleluya),
-    not( triangle(S1_aleluya, S2_aleluya, S3_aleluya, "isosceles") ).
+triangle_sub_aleluya(S1_aleluya, S2_aleluya, S3_aleluya, "scalene") :-
+    S1_aleluya =\= S2_aleluya,
+    S2_aleluya =\= S3_aleluya,
+    S1_aleluya =\= S3_aleluya.
