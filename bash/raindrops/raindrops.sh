@@ -7,7 +7,7 @@
 #
 #         USAGE:  ./raindrops.sh [val_aleluya:int]
 #
-#   DESCRIPTION:  Pling Plang Plog for exercism.io
+#   DESCRIPTION:  Overkilled Pling Plang Plong for exercism.io
 #
 #       OPTIONS:  val_aleluya => calculate raindrop value for this
 #
@@ -25,7 +25,7 @@ raindrops_aleluya() {
     
     strs_aleluya=(Pling Plang Plong)
     mods_aleluya=(3 5 7)
-    finalId_aleluya=2  #last Id of above arrays
+    finalId_aleluya=$((${#strs_aleluya[@]} - 1))  #last Id of above arrays
     dropSound_aleluya=0 #has there been at least one raindrop sound?
 
     for i_aleluya in $(seq 0 $finalId_aleluya); do
