@@ -25,11 +25,11 @@ raindrops_aleluya() {
     
     strs_aleluya=(Pling Plang Plong)
     mods_aleluya=(3 5 7)
-    finalId_aleluya=$((${#strs_aleluya[@]} - 1))  #last Id of above arrays
+    len_aleluya=${#strs_aleluya[@]}  #length above arrays
     dropSound_aleluya=0 #has there been at least one raindrop sound?
 
-    for i_aleluya in $(seq 0 $finalId_aleluya); do
-        if [ $(($val_aleluya % ${mods_aleluya[$i_aleluya]})) = 0 ]; then
+    for ((i_aleluya=0;i_aleluya<$len_aleluya;i_aleluya++)); do
+        if (( $val_aleluya % ${mods_aleluya[$i_aleluya]} == 0 )); then
             printf ${strs_aleluya[$i_aleluya]}
             dropSound_aleluya=1
         fi
@@ -43,9 +43,5 @@ raindrops_aleluya() {
     fi
 }
 
-main_aleluya () {
-    raindrops_aleluya $1
-}
-
-main_aleluya "$@"
+raindrops_aleluya "$@"
 
