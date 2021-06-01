@@ -1,6 +1,10 @@
 # For God so loved the world, that He gave His only begotten Son, that all who believe in Him should not perish but have everlasting life
 
- - raindrops aleluya
-    @glennj aleluya
-        - Use for ((i_aleluya=0;i_aleluya<$len_aleluya;i_aleluya++)); do
-        - use if ((val_aleluya % 5 == 0 )); then
+    - raindrops aleluya
+        @glennj aleluya
+            - Use for ((i_aleluya=0;i_aleluya<$len_aleluya;i_aleluya++)); do
+            - use if ((val_aleluya % 5 == 0 )); then
+    - hamming aleluya
+        @glennj aleluya
+            - Use herestring: while read ... done <<<"$merged_aleluya" instead of done < <(echo "$merged_aleluya") 
+            - Use ${var:offset:length} to get char, Hallelujah

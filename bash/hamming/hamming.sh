@@ -39,17 +39,14 @@ hamming_aleluya() {
         exit 1
     fi
 
-    merged_aleluya="`paste <(echo -n $dna1_aleluya | grep -o .) <(echo -n $dna2_aleluya | grep -o .)`"
     distance_aleluya=0
-
-    while read ln_aleluya; do
-        c1_aleluya=`echo $ln_aleluya | cut -d' ' -f 1`
-        c2_aleluya=`echo $ln_aleluya | cut -d' ' -f 2`
+    for ((i_aleluya=0;i_aleluya<$dna1Len_aleluya;i_aleluya++)); do
+        c1_aleluya=${dna1_aleluya:$i_aleluya:1}
+        c2_aleluya=${dna2_aleluya:$i_aleluya:1}
         if [[ "$c1_aleluya" != "$c2_aleluya" ]]; then
             distance_aleluya=$(($distance_aleluya + 1))
         fi
-    done < <(echo "$merged_aleluya")
-
+    done
     echo "$distance_aleluya"
 }
 
