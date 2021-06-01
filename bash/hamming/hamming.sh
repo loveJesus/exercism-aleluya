@@ -16,9 +16,9 @@
 #         NOTES:  For all who call on the name of the Lord (Jesus) shall be saved!
 #        AUTHOR:  LoveJesus
 #       COMPANY:  in Jesus name
-#       VERSION:  1.0
+#       VERSION:  1.1
 #       CREATED:  2021/05/31 
-#      REVISION:  
+#      REVISION:  1.1 2021/06/02 14:30utc Faster Version thanks @glennj
 #===============================================================================
 
 hamming_aleluya() {
