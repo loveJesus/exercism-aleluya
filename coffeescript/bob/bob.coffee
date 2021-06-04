@@ -2,20 +2,20 @@
 # that all who believe in Him should not perish but have everlasting life.
 class Bob
   hey: (args_aleluya) ->
-  	for elem_aleluya in [
-      [ "Fine. Be that way!", 
-        (aleluya) -> aleluya.trim() == "" ], 
-      [ "Whatever.",           
-        (aleluya) -> aleluya.match(/^[^a-zA-Z]+$/) == "" ],      
-      [ "Whoa, chill out!", 
-        (aleluya) -> 
-          aleluya.toUpperCase() == aleluya &&
-          aleluya.toUpperCase() != aleluya.toLowerCase() ],
-      [ "Sure.",
-        (aleluya) -> aleluya.trim().slice(-1) == "?" ],
-      [ "Whatever.",
-        (aleluya) -> true ]]
-      if elem_aleluya[1](args_aleluya)
-        return elem_aleluya[0]
+    switch
+      when args_aleluya.trim() == "" 
+      then "Fine. Be that way!"
+
+      when args_aleluya.match(/^[^a-zA-Z]+$/) == "" 
+      then "Whatever."
+
+      when args_aleluya.toUpperCase() == args_aleluya &&
+           args_aleluya.toUpperCase() != args_aleluya.toLowerCase()
+      then "Whoa, chill out!"
+
+      when args_aleluya.trim().slice(-1) == "?"
+      then "Sure."
+
+      else "Whatever." 
 
 module.exports = Bob

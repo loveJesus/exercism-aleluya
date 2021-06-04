@@ -2,6 +2,8 @@ For God so loved the world, that He gave His only begotten Son,
 that all who believe in Him should not perish but have everlasting life.
 
 elixir - forth
+d - gigasecond
+cfml - raindrops
 purescript - pangram
 sml - twofer
 c - isogram
@@ -13,6 +15,7 @@ erlang - collatz Hallelujah
 cpp - space age 
 r - raindrops
 javascript - gigasecond
+coffeescript - word count
 delphi - space age
 clisp - anagram
 clojure - armstrong
