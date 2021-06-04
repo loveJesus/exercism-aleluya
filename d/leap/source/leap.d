@@ -3,11 +3,12 @@
 module leap;
 
 bool isLeap(int year_aleluya) {
-    
-    return (year_aleluya % 4 == 0) &&
-           ((year_aleluya % 100 != 0) ||
-            (year_aleluya % 400 == 0));
+
+    return year_aleluya % 4 == 0
+           && year_aleluya % 100 != 0
+           || year_aleluya % 400 == 0;
 }
+
 unittest
 {
     immutable int allTestsEnabled = 1;
